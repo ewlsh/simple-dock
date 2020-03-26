@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "allowJs": true,
+        "target": "ES2017",
+        "module": "ES2015",
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "baseUrl": "./",
+        "lib": [
+            "ES2017"
+        ],
+        "paths": {
+            "*": [
+                "gi/*/index.d.ts"
+            ]
+        }
+    },
+    "include": [
+        "./types/*.d.ts"
+    ]
+}

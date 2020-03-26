@@ -1,0 +1,14 @@
+.~
+*~
+*.mo
+
+gschemas.compiled
+simple-dock@rockon999.github.io.zip
+po/simple-dock.pot
+
+_build/**
+_compiled/**
+_prefs/**
+node_modules/**
+
+.vscode/**
