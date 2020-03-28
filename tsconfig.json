@@ -16,7 +16,11 @@
             ]
         }
     },
+    "files": [
+        "prefs.ts"
+    ],
     "include": [
+        "./src/*.ts",
         "./types/*.d.ts"
     ]
 }

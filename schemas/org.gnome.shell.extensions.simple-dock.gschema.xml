@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-shell-extensions">
+  <enum id='org.gnome.shell.extensions.simple-dock.dock-mode'>
+    <value value='0' nick='OVERVIEW'/>
+    <value value='1' nick='AUTOHIDE'/>
+    <value value='2' nick='FIXED'/>
+  </enum>
+  <schema path="/org/gnome/shell/extensions/simple-dock/" id="org.gnome.shell.extensions.simple-dock">
+    <key type="d" name="animation-duration">
+      <default>0.2</default>
+      <summary>Animation Duration</summary>
+      <description>Sets the time duration of the autohide effect.</description>
+    </key>
+    <key type="d" name="show-delay">
+      <default>0.25</default>
+      <summary>Show delay</summary>
+      <description>Sets the delay after the mouse reaches the screen border before showing the dock.</description>
+    </key>
+    <key type="d" name="hide-delay">
+      <default>0.20</default>
+      <summary>Show delay</summary>
+      <description>Sets the delay after the mouse left the dock before hiding it.</description>
+    </key>
+    <key name="mode" enum="org.gnome.shell.extensions.simple-dock.dock-mode">
+      <default>'AUTOHIDE'</default>
+      <summary>Dock display mode.</summary>
+      <description>Autohide, fixed, or overview only options.</description>
+    </key>
+    <key type="b" name="enable-pressure-threshold">
+      <default>true</default>
+      <summary>Require pressure to show dash</summary>
+      <description>Enable or disable requiring pressure to show the dash</description>
+    </key>
+    <key type="d" name="pressure-threshold">
+      <default>100</default>
+      <summary>Pressure threshold</summary>
+      <description>Sets how much pressure is needed to show the dash.</description>
+    </key>
+    <key type="i" name="icon-size">
+      <default>48</default>
+      <summary>Dash icon size when fixed.</summary>
+      <description>When fixed-icon-size is true this size will be used by the dash.</description>
+    </key>
+    <key type="b" name="fixed-icon-size">
+      <default>false</default>
+      <summary>Fixed icon size</summary>
+      <description>Keep the icon size fixed by scrolling the dock.</description>
+    </key> 
+    <key type="d" name="height">
+      <default>0.90</default>
+      <summary>Dock height as a percentage of the desktop height.</summary>
+    </key>
+    <key type="b" name="extend">
+      <default>false</default>
+      <summary>Extend the dock to fill all the available height</summary>
+    </key>
+    <key type="ai" name="icon-sizes">
+      <default>[16, 22, 24, 32, 48, 64, 96, 128]</default>
+      <summary>Default icon sizes for dash.</summary>
+    </key>
+  </schema>
+</schemalist>

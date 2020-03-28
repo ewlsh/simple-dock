@@ -1,0 +1,12 @@
+{
+    "shell-version": [
+        "3.36"
+    ],
+    "uuid": "simple-dock@rockon999.github.io",
+    "name": "Simple Dock",
+    "description": "A simple dock for the Gnome Shell inspired by Dash to Dock.",
+    "author": "rockon999",
+    "url": "https://github.com/rockon999/simple-dock/",
+    "gettext-domain": "simpledock",
+    "version": 1
+}
