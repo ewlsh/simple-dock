@@ -2,7 +2,7 @@
     "name": "simple-dock",
     "main": "./src/extension.ts",
     "devDependencies": {
-        "rollup": "^2.2.0",
+        "rollup": "^3.29.5",
         "typescript": "^3.8.3"
     }
 }
